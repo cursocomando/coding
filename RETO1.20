@@ -1,0 +1,64 @@
+import numpy as np
+# Asignación de variables - Se asignan los valores de acuerdo al orden de entradas en el ejemplo:
+# Se generan diccionarios para los nombres, materias y género para facilitar el proceso de asignación
+#Diccionarios:
+nombres = {1.0:"armando", 2.0:"nicolas", 3.0:"daniel", 4.0:"maria", 5.0:"marcela", 6.0:"alexandra"}
+materias = {1.0:"idiomas", 2.0:"historia", 3.0:"literatura"}
+genero = {0.0:"m", 1.0:"f"}
+#Inputs:
+registros = int(input("Ingrese la cantidad de entradas: "))
+matriz = [[], [], [], [],]
+
+
+# Función para clasificar las calificaciones:
+def clasificacion():
+    if 10.0<calificacion>9.0:
+        return "Excelente"
+    elif   9.0<calificacion>8.0:
+        return "Sobresaliente"
+    elif 8.0<calificacion>6.0:
+        return "regular"
+    elif 6.0<calificacion>3.0:
+        return "insuficiente"
+    elif 3.0<calificacion>0.0:
+        return "deficiente"
+
+
+#Inicio del ciclo para el proceso por cantidad de registros (también es un input):
+for i in range(registros):
+    entrada = input("")
+    lista = entrada.split(" ") #para la lectura de la entrada y separación de elementos en una lista
+    acum_por_nombre = 
+
+#Asignación de variables:
+    nombre = lista[0]
+    genero = lista[1]
+    materia = lista[2]
+    calificacion = float(lista[3])  #casting de número decimal para el cálculo de la varianza
+ 
+ 
+#Condicional para sumatoria de calificaciones para la media y varianza:
+    if nombre == 1.0:
+        if materia == 1.0:
+            acumnotas1 = calificacion
+        elif materia == 2.0:
+            acumnotas2 = calificacion
+        else:
+            acumnotas3 = calificacion
+    elif nombre == 2.0:
+        acumnotas2 = lista
+    elif nombre == 3.0:
+        acumnotas3 = lista
+    elif nombre == 4.0:
+        acumnotas4 = lista
+    elif nombre == 5.0:
+        acumnotas5 = lista
+    elif nombre == 6.0:
+        acumnotas6 = lista
+
+print (lista)
+print(nombres.get(nombre))
+print(genero)
+print(materia)
+print(calificacion)
+    #condicionales para identificar cada estudiante y almacenar los datos en matrices diferentes para acumular
